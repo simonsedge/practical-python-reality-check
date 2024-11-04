@@ -35,3 +35,35 @@ range(0, len(list) - 3, 4):
 ---
 
 list = [None] * 95 defines 95 empty slots in the list.
+
+---
+
+question: whats the difference between the 2 highest_score initializations in these blocks of code?
+
+```python
+{
+    student_scores = input("strings separated by commas supposed to form a list")
+for n in range(0, len(student_scores)):
+    student_scores[n] = int(student_scores[n])
+highest_score = 0
+for score in student_scores:
+    if score > highest_score:
+        highest_score = score
+        print(f"Maximum element is: {highest_score}")
+}
+```
+
+vs
+
+```python
+{
+    student_scores = input("strings separated by commas supposed to form a list")
+for n in range(0, len(student_scores)):
+    student_scores[n] = int(student_scores[n])
+highest_score = student_scores[0]
+for score in student_scores:
+    if score > highest_score:
+        highest_score = score
+        print(f"Maximum element is: {highest_score}")
+}
+```
