@@ -1,9 +1,0 @@
-characteristics_1 = ...
-characteristics_2 = ...
-characteristics_3 = ...
-
-var_1 = characteristics_1 and not characteristics_2 or characteristics_3
-
----
-
-

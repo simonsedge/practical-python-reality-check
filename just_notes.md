@@ -34,3 +34,4 @@ range(0, len(list) - 3, 4):
 
 ---
 
+list = [None] * 95 defines 95 empty slots in the list.
